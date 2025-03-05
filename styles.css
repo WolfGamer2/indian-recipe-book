@@ -6,10 +6,25 @@ body {
 }
 
 header {
-    background-color: #ff6347;
+    background-color: #fb644a;
     color: white;
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 h1 {
@@ -44,4 +59,14 @@ h1 {
     height: auto;
     display: block;
     margin: 10px 0;
+}
+
+.footer {
+    background-color: #fb644a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
