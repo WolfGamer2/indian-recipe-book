@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Recipe Book</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #f87070;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li.active a {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        .recipe-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            border-top: 1px solid #f87070;
+            padding: 10px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,17 +59,10 @@
         <nav>
             <ul>
                 <li class="active">
-                </li>
-                <a href="index.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="recipes.html">Recipes</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -34,29 +74,30 @@
         </section>
         <section>
             <h2>Featured Recipes</h2>
-            <div class="recipe-box"></div>
-            <h3>Recipe Name</h3>
-            <p>Description of the recipe.</p>
-            <h4>Ingredients</h4>
-            <ul>
-                <li>Ingredient 1</li>
-                <li>Ingredient 2</li>
-                <li>Ingredient 3</li>
-            </ul>
+            <div class="recipe-box">
+                <h3>Recipe Name</h3>
+                <p>Description of the recipe.</p>
+                <h4>Ingredients</h4>
+                <ul>
+                    <li>Ingredient 1</li>
+                    <li>Ingredient 2</li>
+                    <li>Ingredient 3</li>
+                </ul>
             </div>
             <div class="recipe-box">
-            <h3>Recipe Name</h3>
-            <p>Description of the recipe.</p>
-            <h4>Ingredients</h4>
-            <ul>
-                <li>Ingredient 1</li>
-                <li>Ingredient 2</li>
-                <li>Ingredient 3</li>
-            </ul>
+                <h3>Recipe Name</h3>
+                <p>Description of the recipe.</p>
+                <h4>Ingredients</h4>
+                <ul>
+                    <li>Ingredient 1</li>
+                    <li>Ingredient 2</li>
+                    <li>Ingredient 3</li>
+                </ul>
             </div>
+            <h3>Check out more recipes <a href="recipes.html">here</a></h3>
         </section>
     </main>
-    <footer style="border-top: 1px solid #f87070; padding-top: 10px; margin-top: 20px;"></footer>
+    <footer>
         <p>&copy; 2025 Recipe Book. All rights reserved.</p>
     </footer>
 </body>
